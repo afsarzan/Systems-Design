@@ -166,3 +166,24 @@ Two types of load balancers
   - **Forward Proxy** : advantages - logging , traffic control , encryption, client anonymity
   if proxy works on behalf of clients are foward proxy
   - **Reverse Proxy** : Works on behalf on servers. adv -> Server anonymity, DDOs Attack Prevention, Optimizations like caching and can act as load balancer
+
+- Message Queue
+  - producers and consumers
+  - Benefit: 
+    - Decoupling allows you to separate coponents and make them free sooner
+    - The systems becomes more scalable as more clients can send in requests asynchrnously
+    - You can process the message again, if the first attempt fails. This makes the system fault tolerant.
+  - Challenges
+    - Making sure that the ordering of the messages aremains same in the order they were received
+    - Handling duplicate messags to avoid redundancy and processing cycles.
+    - Adding something in the middle introcues latency. The benfits shuld outweigh the lag
+    
+- CDN
+  - users can query to neared content delivery network for faster access
+  - **pros**
+      - Faster load Times
+      - Recues Latency
+      - Caching static content
+    - **cons**
+      - Your data should always be fresh
+      - All the CDN infrastructure is costly
