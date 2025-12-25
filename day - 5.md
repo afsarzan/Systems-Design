@@ -163,3 +163,6 @@ Two types of load balancers
 &nbsp;
 
 - Forward and Reverse Proxy:
+  - **Forward Proxy** : advantages - logging , traffic control , encryption, client anonymity
+  if proxy works on behalf of clients are foward proxy
+  - **Reverse Proxy** : Works on behalf on servers. adv -> Server anonymity, DDOs Attack Prevention, Optimizations like caching and can act as load balancer
